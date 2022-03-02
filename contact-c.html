@@ -1,0 +1,139 @@
+<html>
+<head>
+<title> Contact </title> 
+<script langage="javascript">
+function valider ( )
+{
+if ( document.f.name.value == "" )
+    {
+        alert ( "Veuillez entrer votre nom et votre prènom!" );
+        valid = false;
+return valid;
+    }
+    if ( document.f.Email.value == "" )
+    { alert ( "Veuillez entrer votre Adresse email!" );
+        valid = false;
+return valid;
+    }
+ if ( document.f.sujet.value == "" )
+    {
+        alert ( "Veuillez entrer votre sujet!" );
+        valid = false;
+return valid;
+    }
+	 if ( document.f.message.value == "" )
+    {
+        alert ( "Veuillez entrer votre message !" );
+        valid = false;
+return valid;
+    }
+}
+</script>
+<style type="text/css">
+     nav ul li
+        {
+          display: inline-block;
+          border-right: : 1px bold;
+          text-decoration: none;
+          text-transform: capitalize;
+          border-right:1px solid #CCCCCC;
+        }
+      a 
+        {
+          display: inline-block;
+          padding: 2px;
+          border-right: : 1px bold;
+          text-decoration:none;
+          border-right: 1px bold;
+          text-transform: capitalize;
+        }
+      ul a  {
+        background-image: url(navi_bg_divider.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        text-transform: capitalize;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-right: : 1px bold;
+        line-height: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        color: #371C1C;
+      }
+      div a
+      {text-transform: capitalize;
+      }
+    nav li :hover{
+      color: #ffffff;
+  background-color:#FF0000 ;
+
+}
+h1
+{color: rgb(255 0 0);}
+</style>
+
+  </head>
+<body  background="../images/5.jpeg">    
+  <table align="right">
+        <tr>
+        <td><A href="https://www.facebook.com/"><img src="../images/faceb.png" width="40%"weigth="40%"/></A></td>
+        <td><A href="www.instagram.com"><img src="../images/instagram.png" width="40%"weigth="40%"/></td>
+        <td><A href="www.mail.google.com"><img src="../images/gmail.png" width="40%"weigth="40%"/></td>
+        <td><A href="www.twitter.com"><img src="../images/twitter.png" width="40%"weigth="40%"/></td>
+      </tr>
+      </table>
+            <A href="accueil-c.html"><img src="../images/logo.png" width="70%">
+  <nav>
+   <div>
+      <ul>
+        <li><A href="accueil-c.html" target="droite"> ACCUEIL </li> </A>
+        <li><A href="salle-c.html" target="droite">NOTRE SALLE </li></A>
+        <li><A href="cours-c.html" target="droite">NOS COURS </li></A>
+        <li><A href="caoch-c.html" target="droite">NOS CAOCHS </li></A>
+        <li><A href="tarif-c.html" target="droite">NOS TARIFS </li></A>
+        <li><A href="gallerie-c.html" target="droite"> IMAGES </li></A>
+        <li><A href="inscription-c.html" target="droite">IMSCRIPTION </A></li>
+        <li><A href="contact-c.html" target="droite">CONTACT </li> </A>
+        </ul>
+        </div>
+  </nav>
+
+ <h1 align=center> formulaire de contact </h1>
+ <form method="POST" action="contact-en.html" name="f" onsubmit="return valider()";>
+ <table border=0 width=530 align=center>
+    <tr>
+    <td width=150 > nom et prenom : </td>
+	</tr>
+	<tr>
+    <td  width=150 ><input  name="name"  value="" size="40" type="text" /></td></br>
+	 <td width="100"> &nbsp </td>
+    </tr>
+    <tr> 
+    <td > Adresse Email: </td>
+	</tr>
+	<tr>
+    <td><input name="Email" value="" size="40" type="email"  />
+	 <td width="100"> &nbsp </td>
+    </tr>
+    <tr>
+	 <td> sujet: </td>
+	 </tr>
+	 <tr>
+    <td><textarea name="sujet" cols="40" rows="3" value="sujet" /></textarea></td>
+	 <td width="100"> &nbsp </td>
+      </tr>
+	  <tr>
+	   <td> votre message: </td>
+	   </tr>
+	   <tr >
+    <td ><textarea name="message"  cols="40" rows="10" value="msg" /></textarea></td>
+	 <td width="100"> &nbsp </td>
+	</tr>
+    </table>   
+    <p align="center">
+<input type="submit" value="Envoyer" class="submit"  />
+<input type="reset" value="Annuler" class="submit"  />
+       </p>
+    </form>
+    </body>
+</html>
